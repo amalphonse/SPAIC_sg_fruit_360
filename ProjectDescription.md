@@ -63,7 +63,9 @@ We tried out 4 Pre-trained models: VGG19, Resnet152, Densenet161 and Inception_V
 
 ## Results
 Training Accuracy: 
+
 Validation Accuracy:
+
 Test Accuracy:
 
 The images below show a plot of our training and validation loss and accuracy respectively. These plots were useful in showing us if our training model was overfitting or not. It can be noticed that our model did not overfit.
