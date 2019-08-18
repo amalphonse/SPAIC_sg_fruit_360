@@ -54,7 +54,7 @@ We tried out 4 Pre-trained models: VGG19, Resnet152, Densenet161 and Inception_V
 | HyperParameter    | Values               |
 |-------------------|----------------------|
 | Pre-trained Model | **Inception V3**     |
-| Ephoch            | **20**               |
+| Epoch            | **20**               |
 | Loss              | **CrossEntropyLoss** |
 | Criterion         | **SGD**              |
 | Learning Rate     | **0.001**            |
