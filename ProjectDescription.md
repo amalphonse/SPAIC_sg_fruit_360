@@ -62,19 +62,22 @@ We tried out 4 Pre-trained models: VGG19, Resnet152, Densenet161 and Inception_V
 | Scheduler         | **StepLR**           |
 
 ## Results
-Training Accuracy: 
+**Training Accuracy:** 97.88%    
 
-Validation Accuracy:
+**Validation Accuracy:** 99.24%
 
-Test Accuracy:
+**Test Accuracy:** 99%
 
 The images below show a plot of our training and validation loss and accuracy respectively. These plots were useful in showing us if our training model was overfitting or not. It can be noticed that our model did not overfit.
 
-# ADD IMAGE HERE
+Graphs                     |  Test Accuracy
+:-------------------------:|:-------------------------:
+![Graphs](graphs.PNG)      |  ![Accuracy](accuracy.PNG)
 
 
 ## How was our model deployed?
 Our model was deployed on **Heroku** 
+Here is the link to the website: 
 
 ##  What are the potential uses of our model?
 
