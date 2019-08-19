@@ -1,5 +1,5 @@
 import io
-
+import os
 import torch
 import torch.nn as nn
 from torchvision import models
@@ -7,11 +7,11 @@ from PIL import Image
 import torchvision.transforms as transforms
 
 def get_model():
-  checkpoint_path = 'C:/Urvi/Private AI Scholarship/Kaggle/code/flask/newproj/app/model/Inception.pt'
+  path = os.path.join('model', 'Inception' + "." + 'pt')
   model = models. densenet121(pretrained=True)
   model.classifier = nn.Linear(2048, 196)
   model.load_state_dict(torch.load(
-    checkpoint_path, map_location='cpu'), strict=False)
+    path, map_location='cpu'), strict=False)
   model.eval()
   return model
 
@@ -31,3 +31,18 @@ def get_tensor(image_bytes):
     ]),
   image = Image.open(io.BytesIO(image_bytes))
   return my_transforms(image).unsqueeze(0)
+
+
+# if you get error
+# in heroku use this function
+# just pass fiel
+def transform(file):
+    img = Image.open(file)
+    img = img.resize((180, 180), Image.ANTIALIAS)
+    # print(type(img))
+    img = np.array(img)
+    img = np.broadcast_to(img, (1, 1, 180, 180))
+    # print(type(img))
+    img_tensor = torch.from_numpy(img)
+    # print(img_tensor.shape)
+    return img_tensor.float()
