@@ -77,7 +77,7 @@ Graphs                     |  Test Accuracy
 
 ## How was our model deployed?
 Our model was deployed on **Heroku** 
-Here is the link to the website: 
+Here is the link to the website: https://fruit-360.herokuapp.com
 
 ##  What are the potential uses of our model?
 
