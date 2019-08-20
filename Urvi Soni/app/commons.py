@@ -9,8 +9,8 @@ import torchvision.transforms as transforms
 def get_model():
   checkpoint_path = 'C:/Urvi/Private AI Scholarship/Kaggle/code/flask/newproj/app/model/Inception.pt'
   # model = models. densenet121(pretrained=True)
-  model = models.inception_v3(pretrained=True)
-  model.classifier = nn.Linear(2048, 114)
+  model = models.inception_v3()
+  model.classifier = nn.Linear(2048, 196)
   model.load_state_dict(torch.load(
     checkpoint_path, map_location='cpu'), strict=False)
   model.eval()

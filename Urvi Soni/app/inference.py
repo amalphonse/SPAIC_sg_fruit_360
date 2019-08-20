@@ -2,7 +2,7 @@ import json
 
 from commons import get_model, get_tensor
 
-with open('Classes_clean.json') as f:
+with open('C:/Urvi/Private AI Scholarship/Kaggle/code/flask/newproj/app/Classes_clean.json') as f:
    class_to_name = json.load(f)
 
 # with open('class_to_idx.json') as f:
