@@ -75,10 +75,6 @@ Graphs                     |  Test Accuracy
 ![Graphs](graphs.PNG)      |  ![Accuracy](accuracy.PNG)
 
 
-## How was our model deployed?
-Our model was deployed on **Heroku** 
-Here is the link to the website: https://fruit-360.herokuapp.com
-
 ##  What are the potential uses of our model?
 
 - While going for a walk outdoors, an adventure or even shopping for grocceries, you might come across Fruits or vegetables you don't know. All you need to do is open our website upload the picture and you'll learn something new :smile:
