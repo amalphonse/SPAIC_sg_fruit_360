@@ -22,6 +22,7 @@ def get_fruit_name(file):
     _, prediction = outputs.max(1)
     category = prediction.item()
     print(category)
+    # class_idx = idx_to_class[category.item()]
     class_idx = idx_to_class[category.item()]
     fruit_name = class_to_name[class_idx]
     return category, fruit_name
